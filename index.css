@@ -1,0 +1,157 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Open Sans',sans-serif;
+}
+.row::after{
+    content:"";
+    clear:both;
+    display: block;
+}
+[class*="col-"]{
+    float: left;
+    padding: 10px;
+
+}
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+
+
+.timeandfaq{
+    background-color:black
+}
+.time{
+    color: whitesmoke;
+    text-align: center;
+}
+.regi button{
+    float: right;
+    background-color: blue;
+    color: aqua;
+    border:none;
+    padding: 10px 15px 10px;
+}
+.menu a{
+    color: brown;
+    text-decoration: none;
+    padding: 10px 15px 10px;
+
+}
+.menu{
+    margin-top: 16px;
+    position: relative;
+
+
+}
+.menu a:hover{
+    background-color: black;
+    color: #fff;
+
+}
+.active{
+    background-color: blueviolet;
+    color: white;
+}
+.logoandmenu
+{
+    background-color: aqua;
+    z-index: 1001;
+    width: 100%;
+}
+/*! http://responsiveslides.com v1.55 by @viljamis */
+
+.rslides {
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    }
+  
+  .rslides li {
+    -webkit-backface-visibility: hidden;
+    position: absolute;
+    display: none;
+    width: 100%;
+    left: 0;
+    top: 0;
+    }
+  
+  .rslides li:first-child {
+    position: relative;
+    display: block;
+    float: left;
+    }
+  
+  .rslides img {
+    display: block;
+    height: auto;
+    float: left;
+    width: 100%;
+    border: 0;
+    }
+    .protext{
+        text-align: center;
+    }
+    .protext button{
+        background-color: rgb(3, 90, 61);
+        border: none;
+        padding: 15px;  
+        font-size: 20px;
+    }
+
+.sticky{
+        position: fixed;
+        top: 0;
+}
+#myBtn{
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 15px;
+    z-index: 99;
+    bottom: 20px;
+    right:30px;
+    outline: none;
+    position: fixed;
+
+}
+#wholepage{
+    display: none;
+    text-align: center;
+}
+#loader{
+    width: 150px;
+    height: 150px;
+    border: 16px solid gray;
+    border-radius: 50%;
+    position: absolute;
+    left: 45%;
+    top: 45%;
+    border-top: 16px solid red;
+    width: 120px;
+    height: 120px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite; 
+}
+@-webkit-keyframes spin{
+    0%{ -webkit-transform: rotate(0deg);}
+    100%{ -webkit-transform: rotate(360deg);}
+}
+@keyframes spin{
+    0%{ -webkit-transform: rotate(0deg);}
+    100%{ -webkit-transform: rotate(360deg);}
+}

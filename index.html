@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+    <script src="main.js"></script>
+   
+</head>
+<body onload="myFunction()" style="margin:0">
+    <div id="loader">
+
+    </div>
+    <div id="wholepage">
+    <button onclick="topFunction()" id="myBtn" title="go to top">Top</button>
+    <div class="row timeandfaq">
+        <div class="col-6 time">
+            <p>Opening Hours: Mon-tue : 9:00am-7:00pm </p>
+        </div>
+        <div class="col-6 regi">
+            <button>Register_Here</button>
+        </div>
+    </div>
+    <!--------menu-->
+    <div id="navWrap">
+            <div class="row logoandmenu">
+                    <div class="col-5">
+                        <img src="logo-wide.png" alt="no image">
+            
+                    </div>
+                    <div class="col-7 menu">
+                    <a href="#" class="active">Home</a>
+                    <a href="#">Events</a>
+                    <a href="#">About Us</a>
+            
+                    </div>
+            
+            </div>
+    </div>
+    <!------------slider-->
+    <div class="row">
+        <div class="col-12">
+                <ul class="rslides">
+                        <li><img src="slide1.jpg" alt=""></li>
+                        <li><img src="slide2.jpg" alt=""></li>
+                        <li><img src="slide3.jpg" alt=""></li>
+                      </ul>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <img src="iphone.png" alt="no image" width="100%">
+        </div>
+        <div class="col-6 protext">
+            <h1>Product Of The Year</h1>
+            <p>Definition: A stock is a general term used to describe the ownership certificates of any company. A share, on the other hand, refers to the stock certificate of a particular company. Holding a particular company's share makes you a shareholder.</p>
+            <button>Purchase Now</button><i class="fas fa-cart-plus"></i>
+        </div>
+
+    </div>
+    <div class="row">
+        <div class="col-6">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PkkV1vLHUvQ?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+        </div>
+        <div class="col-6">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.691038661404!2d76.61655631429889!3d12.336570231832725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3baf7a5fd7f84b71%3A0x56edd06e7a72a40!2sVidyavardhaka+College+of+Engineering!5e0!3m2!1sen!2sin!4v1538732211159" width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        </div>
+        
+    </div>
+</div>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="scrolltop.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="responsiveslides.min.js"></script>
+    <script>
+            $(function() {
+              $(".rslides").responsiveSlides();
+            });
+            /*! http://responsiveslides.com v1.55 by @viljamis */
+(function(c,K,C){c.fn.responsiveSlides=function(m){var a=c.extend({auto:!0,speed:500,timeout:4E3,pager:!1,nav:!1,random:!1,pause:!1,pauseControls:!0,prevText:"Previous",nextText:"Next",maxwidth:"",navContainer:"",manualControls:"",namespace:"rslides",before:c.noop,after:c.noop},m);return this.each(function(){C++;var f=c(this),u,t,v,n,q,r,p=0,e=f.children(),D=e.length,h=parseFloat(a.speed),E=parseFloat(a.timeout),w=parseFloat(a.maxwidth),g=a.namespace,d=g+C,F=g+"_nav "+d+"_nav",x=g+"_here",k=d+"_on",
+y=d+"_s",l=c("<ul class='"+g+"_tabs "+d+"_tabs' />"),z={"float":"left",position:"relative",opacity:1,zIndex:2},A={"float":"none",position:"absolute",opacity:0,zIndex:1},G=function(){var b=(document.body||document.documentElement).style,a="transition";if("string"===typeof b[a])return!0;u=["Moz","Webkit","Khtml","O","ms"];var a=a.charAt(0).toUpperCase()+a.substr(1),c;for(c=0;c<u.length;c++)if("string"===typeof b[u[c]+a])return!0;return!1}(),B=function(b){a.before(b);G?(e.removeClass(k).css(A).eq(b).addClass(k).css(z),
+p=b,setTimeout(function(){a.after(b)},h)):e.stop().fadeOut(h,function(){c(this).removeClass(k).css(A).css("opacity",1)}).eq(b).fadeIn(h,function(){c(this).addClass(k).css(z);a.after(b);p=b})};a.random&&(e.sort(function(){return Math.round(Math.random())-.5}),f.empty().append(e));e.each(function(a){this.id=y+a});f.addClass(g+" "+d);m&&m.maxwidth&&f.css("max-width",w);e.hide().css(A).eq(0).addClass(k).css(z).show();G&&e.show().css({"-webkit-transition":"opacity "+h+"ms ease-in-out","-moz-transition":"opacity "+
+h+"ms ease-in-out","-o-transition":"opacity "+h+"ms ease-in-out",transition:"opacity "+h+"ms ease-in-out"});if(1<e.length){if(E<h+100)return;if(a.pager&&!a.manualControls){var H=[];e.each(function(a){a+=1;H+="<li><a href='#' class='"+y+a+"'>"+a+"</a></li>"});l.append(H);m.navContainer?c(a.navContainer).append(l):f.after(l)}a.manualControls&&(l=c(a.manualControls),l.addClass(g+"_tabs "+d+"_tabs"));(a.pager||a.manualControls)&&l.find("li").each(function(a){c(this).addClass(y+(a+1))});if(a.pager||a.manualControls)r=
+l.find("a"),t=function(a){r.closest("li").removeClass(x).eq(a).addClass(x)};a.auto&&(v=function(){q=setInterval(function(){e.stop(!0,!0);var b=p+1<D?p+1:0;(a.pager||a.manualControls)&&t(b);B(b)},E)},v());n=function(){a.auto&&(clearInterval(q),v())};a.pause&&f.hover(function(){clearInterval(q)},function(){n()});if(a.pager||a.manualControls)r.bind("click",function(b){b.preventDefault();a.pauseControls||n();b=r.index(this);p===b||c("."+k).queue("fx").length||(t(b),B(b))}).eq(0).closest("li").addClass(x),
+a.pauseControls&&r.hover(function(){clearInterval(q)},function(){n()});if(a.nav){g="<a href='#' class='"+F+" prev'>"+a.prevText+"</a><a href='#' class='"+F+" next'>"+a.nextText+"</a>";m.navContainer?c(a.navContainer).append(g):f.after(g);var d=c("."+d+"_nav"),I=d.filter(".prev");d.bind("click",function(b){b.preventDefault();b=c("."+k);if(!b.queue("fx").length){var d=e.index(b);b=d-1;d=d+1<D?p+1:0;B(c(this)[0]===I[0]?b:d);(a.pager||a.manualControls)&&t(c(this)[0]===I[0]?b:d);a.pauseControls||n()}});
+a.pauseControls&&d.hover(function(){clearInterval(q)},function(){n()})}}if("undefined"===typeof document.body.style.maxWidth&&m.maxwidth){var J=function(){f.css("width","100%");f.width()>w&&f.css("width",w)};J();c(K).bind("resize",function(){J()})}})}})(jQuery,this,0);
+    </script>
+    <script>
+        $(document).scroll(function() {
+            var y=$(this).scrollTop();
+            var navWrap=$('#navWrap').offset().top;
+            if (y > navWrap) {
+                $('.logoandmenu').addClass('sticky');
+            }
+            else {
+                $('.logoandmenu').removeClass('sticky');
+            }
+        });
+    </script>
+
+<script>
+function myFunction()
+{
+    myVar=setTimeout(showPage,2000);
+}
+function showPage()
+{
+    document.getElementById("loader").style.display="none";
+    document.getElementById("wholepage").style.display="block";
+}
+</script>
+</body>
+</html>
